@@ -5,13 +5,85 @@
     color: #fff;
     padding: 200px;
     text-align: center;
+    font-weight: bold; 
 }
 
-.products-section {
-    background-color: #c6e699;
+/* styles.css */
+
+/* styles.css */
+
+.navbar-brand-custom {
+    color: #fff; /* White color */
+    font-family: 'Times New Roman', Times, serif; /* Times New Roman font */
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold; /* Optionally, make the font bold */
 }
+
+/* Navbar links color */
+.navbar-nav .nav-link {
+    color: #fff; /* White color */
+}
+
+/* Navbar background color */
+.navbar {
+    background-color: #343a40; /* Dark background color */
+}
+
+/* Optional: Active link color */
+.navbar-nav .nav-item.active .nav-link {
+    color: #ffca28; /* Change active link color if needed */
+}
+
+
+.nav-item {
+        padding: 5px 10px;
+        transition: color 0.3s ease;
+}
+.products-section {
+    background-image: url('bg.jpg');
+
+}
+/* styles.css */
+
+.card {
+    height: 100%; /* Ensures all cards in a row are of equal height */
+}
+
+.card-img-top {
+    height: 200px; /* Adjust image height as needed */
+    object-fit: cover; /* Ensure images maintain aspect ratio */
+}
+
+.card-title {
+    font-size: 1.25rem; /* Adjust title font size */
+}
+
+.card-text {
+    font-size: 1rem; /* Adjust text font size */
+}
+/* styles.css */
+
+.card {
+    transition: transform 0.3s ease; /* Add transition for transform property */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up the card slightly on hover */
+}
+.card {
+    margin-bottom: 5px;
+    padding: 10px 10py;
+}
+.card-header {
+    background-color: #28a745;
+    color: black;
+}
+.card-body {
+    font-size: 1.1em;
+}
+
 .about-section {
-    background-image:url('a.jpg');
+    background-image:url('p1.jpg');
     background-size: cover;
     padding: 50px 0;
 }
@@ -32,6 +104,6 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #343a40;
+    background-color: #010101;
     color: #fff;
 }
