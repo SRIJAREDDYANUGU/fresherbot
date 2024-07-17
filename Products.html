@@ -6,13 +6,17 @@
     <title>Products - FARM-SELL</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css"> <!-- Custom CSS for additional styling -->
+    <style>
+        .products-section {
+            padding: 60px 0; /* Custom padding */
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                
                 <a class="navbar-brand navbar-brand-custom" href="#">FARM-SELL</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -40,72 +44,70 @@
     <!-- Products Section -->
     <section class="products-section">
         <div class="container">
+            <h2 class="text-center mb-4"><b>Our Products</b></h2>
             <div class="row">
                 <div class="col-lg-4 mb-4">
                     <div class="card h-100">
-                    <div class="card">
                         <img src="rice.jpg" class="card-img-top" alt="Crop Image">
                         <div class="card-body">
                             <h5 class="card-title">Rice</h5>
-                            <p class="card-text">Rice is a cereal grain and in its domesticated form is the staple food of over half of the world's population, particularly in Asia and Africa.   </p>
+                            <p class="card-text">Rice is a cereal grain and in its domesticated form is the staple food of over half of the world's population, particularly in Asia and Africa.</p>
                             <p class="card-text">Price: $10.00</p>
                             <a href="#" class="btn btn-primary">Buy Now</a>
-                        </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4">
                     <div class="card h-100">
-                    <div class="card">
                         <img src="wheat.jpg" class="card-img-top" alt="Crop Image">
                         <div class="card-body">
-                            <h5 class="card-title">wheat</h5>
-                            <p class="card-text">Wheat is a grass widely cultivated for its seed, a cereal grain that is a staple food around the world..</p>
+                            <h5 class="card-title">Wheat</h5>
+                            <p class="card-text">Wheat is a grass widely cultivated for its seed, a cereal grain that is a staple food around the world.</p>
                             <p class="card-text">Price: $12.00</p>
                             <a href="#" class="btn btn-primary">Buy Now</a>
-                        </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4">
-                    <div class="card">
+                    <div class="card h-100">
                         <img src="sugarcane.jpg" class="card-img-top" alt="Crop Image">
                         <div class="card-body">
-                            <h5 class="card-title">sugarcane</h5>
-                            <p class="card-text">Sugarcane or sugar cane is a species of tall, perennial grass that is used for sugar production.</p>
+                            <h5 class="card-title">Sugarcane</h5>
+                            <p class="card-text">Sugarcane is a species of tall, perennial grass that is used for sugar production.</p>
                             <p class="card-text">Price: $12.00</p>
                             <a href="#" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
                 </div>
+                <!-- Additional product cards -->
                 <div class="col-lg-4 mb-4">
-                    <div class="card">
-                        <img src="Barley.jpg" class="card-img-top" alt="Crop Image">
+                    <div class="card h-100">
+                        <img src="barley.jpg" class="card-img-top" alt="Crop Image">
                         <div class="card-body">
                             <h5 class="card-title">Barley</h5>
-                            <p class="card-text">Barley, a member of the grass family, is a major cereal grain grown in temperate climates globally.</p>
+                            <p class="card-text">Barley is a major cereal grain grown in temperate climates globally.</p>
                             <p class="card-text">Price: $12.00</p>
                             <a href="#" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4">
-                    <div class="card">
+                    <div class="card h-100">
                         <img src="cotton.jpg" class="card-img-top" alt="Crop Image">
                         <div class="card-body">
-                            <h5 class="card-title">cotton</h5>
-                            <p class="card-text">Cotton is the most widely produced natural fiber on the planet. Cotton is the most widely produced natural fiber on the planet. </p>
+                            <h5 class="card-title">Cotton</h5>
+                            <p class="card-text">Cotton is the most widely produced natural fiber on the planet.</p>
                             <p class="card-text">Price: $12.00</p>
                             <a href="#" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4">
-                    <div class="card">
+                    <div class="card h-100">
                         <img src="groundnut.jpg" class="card-img-top" alt="Crop Image">
                         <div class="card-body">
-                            <h5 class="card-title">groundnut</h5>
-                            <p class="card-text">The peanut, also known as the groundnut, goober, goober pea, pindar or monkey nut, is a legume crop grown mainly for its edible seeds.</p>
+                            <h5 class="card-title">Groundnut</h5>
+                            <p class="card-text">The peanut, also known as the groundnut, is a legume crop grown mainly for its edible seeds.</p>
                             <p class="card-text">Price: $12.00</p>
                             <a href="#" class="btn btn-primary">Buy Now</a>
                         </div>
@@ -232,14 +234,14 @@
                         </div>
                     </div>
                 </div>
-                <!-- Repeat for more crops -->
+                <!-- Add more products as necessary -->
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer bg-dark text-light text-center py-3">
-        <p>&copy; 2024 Farmers Market. All rights reserved.</p>
+        <p>&copy; 2024 FARM-SELL. All rights reserved.</p>
     </footer>
 
     <!-- Bootstrap JS and dependencies -->

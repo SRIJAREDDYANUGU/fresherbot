@@ -7,7 +7,30 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css"> <!-- Custom CSS for additional styling -->
     <style>
-        /* Custom CSS can be added here if needed */
+        body {
+            background-color: #f8f9fa;
+        }
+        .carousel-item {
+            padding: 20px;
+        }
+        .carousel-header {
+            background-color: #4d8b05;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .footer {
+            background-color: #4a4a4a;
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: black; /* Set the background color to black */
+        }
+        .carousel-control-prev-icon:hover,
+        .carousel-control-next-icon:hover {
+            background-color: #555; /* Optional: Change color on hover */
+        }
     </style>
 </head>
 <body>
@@ -16,7 +39,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand navbar-brand-custom" href="#">FARM-SELL</a>
+                <a class="navbar-brand navbar-brand-custom" href="#"><b>FARM-SELL</b></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -42,94 +65,106 @@
 
     <!-- About Section -->
     <section class="about-section">
-        <div class="container mt-4">
-            <div class="row">
+        <div class="container mt-10">
+            <h2 class="text-center mb-4"><b>About Us</b></h2>
+            <div id="aboutCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
 
-                <!-- Freshness Guaranteed -->
-                <div class="col-lg-6 mb-4">
-                    <div class="card">
-                        <div class="card-header">
-                            Freshness Guaranteed
+                    <!-- Freshness Guaranteed -->
+                    <div class="carousel-item active">
+                        <div class="carousel-header">
+                            <b>Freshness Guaranteed</b>
                         </div>
-                        <div class="card-body">
-                            <p>Every item you find at our farm store is harvested at peak ripeness to ensure maximum flavor and nutritional value. From vibrant fruits and vegetables to fragrant herbs and specialty crops, each product reflects our commitment to sustainable farming practices and dedication to preserving the environment.</p>
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <p>Every item you find at our farm store is harvested at peak ripeness to ensure maximum flavor and nutritional value. From vibrant fruits and vegetables to fragrant herbs and specialty crops, each product reflects our commitment to sustainable farming practices and dedication to preserving the environment.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Supporting Local Farmers -->
-                <div class="col-lg-6 mb-4">
-                    <div class="card">
-                        <div class="card-header">
-                            Supporting Local Farmers
+                    <!-- Supporting Local Farmers -->
+                    <div class="carousel-item">
+                        <div class="carousel-header">
+                            <b>Supporting Local Farmers</b>
                         </div>
-                        <div class="card-body">
-                            <p>By shopping at our farm store, you are supporting local farmers and their families. We believe in the importance of community and sustainability, which is why we work closely with small-scale growers who prioritize quality over quantity. Your purchase directly contributes to the livelihoods of these hardworking individuals and helps sustain our agricultural heritage.</p>
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <p>By shopping at our farm store, you are supporting local farmers and their families. We believe in the importance of community and sustainability, which is why we work closely with small-scale growers who prioritize quality over quantity. Your purchase directly contributes to the livelihoods of these hardworking individuals and helps sustain our agricultural heritage.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Seasonal Variety -->
-                <div class="col-lg-6 mb-4">
-                    <div class="card">
-                        <div class="card-header">
-                            Seasonal Variety
+                    <!-- Seasonal Variety -->
+                    <div class="carousel-item">
+                        <div class="carousel-header">
+                            <b>Seasonal Variety</b>
                         </div>
-                        <div class="card-body">
-                            <p>Our inventory varies with the seasons, offering a diverse selection of produce year-round. Whether it’s crisp apples and pumpkins in the fall, juicy berries and sweet corn in the summer, or hearty root vegetables in the winter, each visit to our farm store promises a new array of flavors to enjoy.</p>
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <p>Our inventory varies with the seasons, offering a diverse selection of produce year-round. Whether it’s crisp apples and pumpkins in the fall, juicy berries and sweet corn in the summer, or hearty root vegetables in the winter, each visit to our farm store promises a new array of flavors to enjoy.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Beyond Produce -->
-                <div class="col-lg-6 mb-4">
-                    <div class="card">
-                        <div class="card-header">
-                            Beyond Produce
+                    <!-- Beyond Produce -->
+                    <div class="carousel-item">
+                        <div class="carousel-header">
+                            <b>Beyond Produce</b>
                         </div>
-                        <div class="card-body">
-                            <p>In addition to fresh fruits and vegetables, our farm store often features artisanal products such as homemade jams, local honey, farm-fresh eggs, and handcrafted goods from nearby artisans. These items complement our produce selection and showcase the talent and creativity of our local community.</p>
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <p>In addition to fresh fruits and vegetables, our farm store often features artisanal products such as homemade jams, local honey, farm-fresh eggs, and handcrafted goods from nearby artisans. These items complement our produce selection and showcase the talent and creativity of our local community.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Educational Opportunities -->
-                <div class="col-lg-6 mb-4">
-                    <div class="card">
-                        <div class="card-header">
-                            Educational Opportunities
+                    <!-- Educational Opportunities -->
+                    <div class="carousel-item">
+                        <div class="carousel-header">
+                            <b>Educational Opportunities</b>
                         </div>
-                        <div class="card-body">
-                            <p>We are passionate about sharing our knowledge of farming and agriculture with our customers. Throughout the year, we offer educational events such as farm tours, gardening workshops, and cooking demonstrations. These activities provide insights into the journey from seed to harvest and inspire a deeper appreciation for where our food comes from.</p>
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <p>We are passionate about sharing our knowledge of farming and agriculture with our customers. Throughout the year, we offer educational events such as farm tours, gardening workshops, and cooking demonstrations. These activities provide insights into the journey from seed to harvest and inspire a deeper appreciation for where our food comes from.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Community Gathering Place -->
-                <div class="col-lg-6 mb-4">
-                    <div class="card">
-                        <div class="card-header">
-                            Community Gathering Place
+                    <!-- Community Gathering Place -->
+                    <div class="carousel-item">
+                        <div class="carousel-header">
+                            <b>Community Gathering Place</b>
                         </div>
-                        <div class="card-body">
-                            <p>Our farm store isn’t just a place to shop—it’s a gathering place for neighbors, friends, and families to connect over shared values and interests. Whether you’re chatting with farmers about their latest harvest or enjoying a freshly baked treat from our on-site bakery, our store fosters a sense of belonging and camaraderie.</p>
+                        <div class="card mt-4">
+                            <div class="card-body">
+                                <p>Our farm store isn’t just a place to shop—it’s a gathering place for neighbors, friends, and families to connect over shared values and interests. Whether you’re chatting with farmers about their latest harvest or enjoying a freshly baked treat from our on-site bakery, our store fosters a sense of belonging and camaraderie.</p>
+                            </div>
                         </div>
                     </div>
+
                 </div>
 
+                <!-- Carousel Controls -->
+                <a class="carousel-control-prev" href="#aboutCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#aboutCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer bg-dark text-light text-center py-3">
-        <p>&copy; 2024 Farmers Market. All rights reserved.</p>
+        <p>&copy; 2024 FARM-SELL. All rights reserved.</p>
     </footer>
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </body>
 </html>

@@ -3,19 +3,31 @@
     background-image: url('bg.jpg');
     background-size: cover;
     color: #fff;
-    padding: 200px;
+    padding: 200px 0;
     text-align: center;
     font-weight: bold; 
 }
+.contact-section {
+    padding: 80px 0; /* Increased top and bottom padding */
+}
 
 /* styles.css */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; /* Set the background color to black */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #555; /* Optional: Change color on hover for better UX */
+}
 
 /* styles.css */
 
 .navbar-brand-custom {
     color: #fff; /* White color */
     font-family: 'Times New Roman', Times, serif; /* Times New Roman font */
-    font-size: 24px; /* Adjust font size as needed */
+    font-size: 25px; /* Adjust font size as needed */
     font-weight: bold; /* Optionally, make the font bold */
 }
 
@@ -31,7 +43,7 @@
 
 /* Optional: Active link color */
 .navbar-nav .nav-item.active .nav-link {
-    color: #ffca28; /* Change active link color if needed */
+    color: #09fd09; /* Change active link color if needed */
 }
 
 
@@ -41,6 +53,8 @@
 }
 .products-section {
     background-image: url('bg.jpg');
+    background-size: cover;
+    padding: 100px 0;
 
 }
 /* styles.css */
@@ -83,9 +97,9 @@
 }
 
 .about-section {
-    background-image:url('p1.jpg');
+    background-image:url('s.jpg');
     background-size: cover;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .footer {
